@@ -26,6 +26,25 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+.hero {
+  background: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 50px,
+    #b7dafe 50px,
+    #b7dafe 51px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 50px,
+    #b7dafe 50px,
+    #b7dafe 51px
+  ),
+    linear-gradient(45deg, #0a3a6a, #0f1020);
+  /* background-size: 100px 50px, 50px 100px; */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

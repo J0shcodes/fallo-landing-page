@@ -1,6 +1,6 @@
 const Newsletter = () => {
   return (
-    <div className="flex flex-col justify-center items-center pt-[2.8125rem] pb-10">
+    <div className="flex flex-col justify-center items-center pt-[2.8125rem] pb-10 relative">
       <div className="mb-[2.875rem]">
         <h2 className="text-[3.25rem] font-bold mb-2.5 text-center">
           Join our newsletter
@@ -30,7 +30,7 @@ const Newsletter = () => {
             />
           </div>
         </div>
-        <button className="mt-10 w-full text-lg text-[#fafafa] font-medium bg-[#1789fc] py-4 rounded-tl-lg rounded-br-lg">Subscribe</button>
+        <button className="mt-10 w-full text-lg text-[#fafafa] font-medium bg-primary hover:bg-[#0a3a6a] py-4 rounded-tl-lg rounded-br-lg">Subscribe</button>
       </form>
     </div>
   );
