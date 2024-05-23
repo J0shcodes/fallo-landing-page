@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="lg:flex lg:justify-between lg:flex-row-reverse pr-[10.3125rem] lg:pt-[3.5rem] lg:pb-[5.1875rem] lg:px-[7rem] p-[2.375rem] bg-red-500 w-full">
     {/* // <div className="pr-[10.3125rem] lg:pt-[3.5rem] lg:pb-[5.1875rem] lg:px-[7rem] p-[2.375rem] bg-red-500"> */}
-      <div className="flex justify-between lg:w-[33.1875rem] lg:mb-0 mb-6 w-[425px] bg-green-500">
+      <div className="flex justify-between lg:w-[33.1875rem] lg:mb-0 mb-6 min-w-[425px] bg-green-500">
         <div className="lg:text-lg text-xs">
           <div className="font-semibold">Quick Links</div>
           <ul className="list-disc mt-4">
@@ -71,8 +71,9 @@ const Footer = () => {
           <Image
             src="/images/Fallo-logo.png"
             alt="Logo"
-            width={392.51}
-            height={126.51}
+            width={392}
+            height={126}
+            layout="responsive"
           />
           <div className="mt-6 lg:text-2xl lg:text-start text-center">The all in one productivity powerhouse</div>
         </div>
