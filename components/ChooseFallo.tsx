@@ -8,7 +8,7 @@ const ChooseFallo = () => {
     <div className="flex flex-col justify-center items-center relative h-[109.4375rem] w-full">
       <div
         className={`bg-[#0a3a6a] pt-[3.6875rem] pb-12 transition-all duration-1000 ease-out delay-300 ${
-          hovered ? "w-full" : "max-w-[71.5rem] rounded-[2.5rem]"
+          hovered ? "scale-x-110" : "max-w-[71.5rem] rounded-[2.5rem]"
         } absolute z-50`}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -91,13 +91,13 @@ const ChooseFallo = () => {
       </div>
       <div
         className={`${
-          hovered ? "w-[95%]" : "w-[68.35rem]"
-        }  h-[75rem] bg-[#1789fc] rounded-[2.5rem] absolute z-40`}
+          hovered ? "scale-x-105" : ""
+        }  h-[75rem] bg-[#1789fc] rounded-[2.5rem] absolute z-40 w-[68.35rem]`}
       ></div>
       <div
         className={`${
-          hovered ? "w-[85%]" : "w-[64.35rem]"
-        } h-[78.25rem] bg-[#b7dafe] rounded-[2.5rem] absolute z-30`}
+          hovered ? "scale-x-105" : ""
+        } h-[78.25rem] bg-[#b7dafe] rounded-[2.5rem] absolute z-30 w-[64.35rem]`}
       ></div>
       <div></div>
     </div>
