@@ -5,7 +5,7 @@ import Header from "./Header";
 const Hero = () => {
   return (
     <div className="text-black hero flex flex-col justify-center items-center lg:h-[79.5rem]">
-      <div className="bg-green-500">
+      <div className="">
         <Header />
         <div className="flex flex-col justify-center items-center">
           <div className="mb-20 text-center lg:w-[919px] w-[339px]">
