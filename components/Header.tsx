@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className="text-white bg-[#fafafa] flex justify-between lg:rounded-tl-3xl lg:rounded-br-3xl rounded-tl-lg rounded-br-lg w-full px-[1.375rem] py-[1.125rem] mb-[7.5625rem]">
       <Image src="/images/logo.svg" alt="small logo" width={100} height={25} />
-      <div className="flex flex-col justify-center items-center w-[19.625rem] relative">
+      <div className="lg:flex flex-col justify-center items-center w-[19.625rem] relative hidden">
         <ul className="text-lg text-[#0b0b0b] flex justify-between w-full">
           <li>
             <Link href="/about" className="hover:text-primary">
@@ -42,7 +42,7 @@ const Header = () => {
         </ul>
         <SupportDropdown showSupportDropdown={showSupportDropdown} />
       </div>
-      <div className="w-[22.3125rem]">
+      <div className="w-[22.3125rem] lg:block hidden">
         <Link
           href="/"
           className="text-lg text-[#06070d] font-medium hover:bg-[#9f9fa1] py-4 px-9 mr-1.5 rounded-tl-lg rounded-br-lg"

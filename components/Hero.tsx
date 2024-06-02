@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const Hero = () => {
   return (
-    <div className="text-black hero flex flex-col justify-center items-center lg:h-[79.5rem]">
+    <div className="text-black hero flex flex-col justify-center items-center lg:h-[79.5rem] pb-4">
       <div className="">
         <Header />
         <div className="flex flex-col justify-center items-center">

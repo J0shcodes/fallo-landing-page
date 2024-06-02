@@ -4,15 +4,17 @@ import Underline from "@/public/icons/Underline";
 
 const Testimonials = () => {
   return (
-    <div className="h-[110.75rem] pt-[5.625rem] pb-[3.6875rem] relative overflow-hidden  bg-red-500">
+    <div className="lg:h-[110.75rem] lg:pt-[5.625rem] pt-[1.4375rem] pb-[3.6875rem] relative overflow-hidden bg-red-500">
       <div className="flex flex-col justify-center items-center">
-        <h2 className="text-[3.4375rem] font-bold">What People are saying</h2>
-        <div>
+        <h2 className="lg:text-[3.4375rem] text-[2.125rem] font-bold text-center lg:block hidden">
+          What People are saying
+        </h2>
+        <div className="lg:block hidden">
           <Underline />
         </div>
       </div>
-      <div className="mt-[7.125rem] grid grid-cols-6 gap-y-[2.875rem] px-[7rem] bg-green-500">
-        <div className="bg-orange-500 col-start-1 col-end-3">
+      <div className="lg:mt-[7.125rem] grid grid-cols-6 lg:gap-y-[2.875rem] gap-y-[8.375rem] md:gap-x-10 lg:px-[7rem] px-[2.375rem] bg-green-500">
+        <div className="bg-orange-500 lg:col-start-1 lg:col-end-3 md:col-span-3 col-span-6">
           <div className="bg-[#0a3a6a] max-w-full flex flex-col justify-center items-center rounded-3xl px-4 pt-[2.125rem] pb-4 relative overflow-hidden">
             <div className="text-[#fafafa] mb-6 text-xl relative z-50">
               <div className="">
@@ -31,8 +33,8 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className="col-span-2 col-end-7 bg-orange-500">
-          <div className="bg-[#0a3a6a] max-w-full flex flex-col justify-center items-center rounded-3xl px-4 pt-[2.125rem] pb-4 relative overflow-hidden">
+        <div className="lg:col-span-2 lg:col-end-7 md:col-span-3 col-span-6 bg-orange-500">
+          <div className="bg-[#0a3a6a] max-w-full h-full flex flex-col justify-center items-center rounded-3xl px-4 pt-[2.125rem] pb-4 relative overflow-hidden">
             <div className="text-[#fafafa] mb-6 text-xl relative z-50">
               <div>
                 Fallo&apos;s analytics have given me the insights I need to work
@@ -50,7 +52,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className="bg-orange-500 col-start-2 col-span-4">
+        <div className="bg-orange-500 col-start-2 col-span-4 lg:block hidden">
           <div className="bg-[#0a3a6a] flex gap-6 col-start-3 col-span-4 py-4 pl-[1.375rem] rounded-3xl">
             <Image
               src="/images/testimonial-4.png"
@@ -74,8 +76,8 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className="col-start-1 col-end-3 bg-orange-500">
-          <div className="bg-[#0a3a6a] col-start-1 col-end-3 max-w-full flex flex-col justify-center items-center rounded-3xl px-4 pt-[2.125rem] pb-4 relative overflow-hidden">
+        <div className="lg:col-start-1 lg:col-end-3 md:col-span-3 col-span-6 bg-orange-500">
+          <div className="bg-[#0a3a6a] col-start-1 col-end-3 max-w-full h-full flex flex-col justify-center items-center rounded-3xl px-4 pt-[2.125rem] pb-4 relative overflow-hidden">
             <Image
               src="/images/testimonial-3.png"
               alt=""
@@ -93,7 +95,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className="col-span-2 col-end-7 bg-orange-500">
+        <div className="lg:col-span-2 lg:col-end-7 md:col-span-3 col-span-6 bg-orange-500">
           <div className="bg-[#0a3a6a] col-end-8 col-span-2 max-w-full flex flex-col justify-center items-center rounded-3xl px-4 pt-[2.125rem] pb-4 relative overflow-hidden">
             <Image
               src="/images/testimonial-2.png"
@@ -113,10 +115,10 @@ const Testimonials = () => {
         </div>
       </div>
       {/* <div className="relative flex flex-col justify-center items-center bg-purple-500 h-[700px]"> */}
-      <div className="w-[10rem] h-[10rem] rounded-full border-[1.323125rem] border-solid border-[#f2c94c] absolute top-[30.375rem] left-[45%]"></div>
-      <div className="w-[10rem] h-[10rem] rounded-full border-[1.323125rem] border-solid border-[#219653] absolute left-[-6.25rem] top-2/4"></div>
-      <div className="w-[10rem] h-[10rem] rounded-full border-[1.323125rem] border-solid border-[#2f80ed] absolute right-[-6.25rem] top-2/4"></div>
-      <div className="w-[10rem] h-[10rem] rounded-full border-[1.323125rem] border-solid border-[#eb5757] absolute top-[88.4375rem] left-[45%]"></div>
+      <div className="lg:w-[10rem] w-[4.4375rem] lg:h-[10rem] h-[4.4375rem] rounded-full border-8 lg:border-[1.323125rem] border-solid border-[#f2c94c] absolute lg:top-[30.375rem] top-[29rem] left-[45%]"></div>
+      <div className="lg:w-[10rem] w-[4.4375rem] lg:h-[10rem] h-[4.4375rem] rounded-full border-8 lg:border-[1.323125rem] border-solid border-[#219653] absolute lg:left-[-6.25rem] left-[45%] lg:top-2/4 top-[63.3rem] lg:block md:hidden"></div>
+      <div className="lg:w-[10rem] w-[4.4375rem] lg:h-[10rem] h-[4.4375rem] rounded-full border-8 lg:border-[1.323125rem] border-solid border-[#2f80ed] absolute lg:right-[-6.25rem] top-2/4 lg:block hidden"></div>
+      <div className="lg:w-[10rem] w-[4.4375rem] lg:h-[10rem] h-[4.4375rem] rounded-full border-8 lg:border-[1.323125rem] border-solid border-[#eb5757] absolute lg:top-[88.4375rem] top-[97.2rem] left-[45%] lg:block md:hidden"></div>
       {/* </div> */}
     </div>
   );
