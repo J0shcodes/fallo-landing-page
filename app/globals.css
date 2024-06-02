@@ -17,13 +17,32 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+.hero {
+  background: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 50px,
+    #b7dafe 50px,
+    #b7dafe 51px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 50px,
+    #b7dafe 50px,
+    #b7dafe 51px
+  ),
+    linear-gradient(45deg, #0a3a6a, #0f1020);
+  /* background-size: 100px 50px, 50px 100px; */
 }
 
 @layer utilities {
