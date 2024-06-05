@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className="text-white bg-[#fafafa] flex justify-between lg:rounded-tl-3xl lg:rounded-br-3xl rounded-tl-lg rounded-br-lg w-full px-[1.375rem] py-[1.125rem] mb-[7.5625rem]">
       <Image src="/images/logo.svg" alt="small logo" width={100} height={25} />
-      <div className="lg:flex flex-col justify-center items-center w-[19.625rem] relative hidden">
+      <div className="lg:flex md:flex flex-col justify-center items-center w-[19.625rem] relative hidden">
         <ul className="text-lg text-[#0b0b0b] flex justify-between w-full">
           <li>
             <Link href="/about" className="hover:text-primary">
@@ -42,14 +42,14 @@ const Header = () => {
         </ul>
         <SupportDropdown showSupportDropdown={showSupportDropdown} />
       </div>
-      <div className="w-[22.3125rem] lg:block hidden">
+      <div className="w-[22.3125rem] lg:block md:block hidden">
         <Link
           href="/"
           className="text-lg text-[#06070d] font-medium hover:bg-[#9f9fa1] py-4 px-9 mr-1.5 rounded-tl-lg rounded-br-lg"
         >
           Sign In
         </Link>
-        <button className="bg-primary py-4 rounded-tl-lg rounded-br-lg hover:bg-[#0a3a6a] text-lg text-[#fafafa] font-medium w-[13.0625rem] ml-1.5">
+        <button className="bg-primary py-4 rounded-tl-lg rounded-br-lg hover:bg-[#0a3a6a] lg:text-lg text-base text-[#fafafa] font-medium w-[13.0625rem] ml-1.5">
           Create an account
         </button>
       </div>

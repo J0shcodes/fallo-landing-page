@@ -14,7 +14,7 @@ const ChooseFallo = () => {
         className={`bg-[#0a3a6a] pt-[3.6875rem] pb-12 transition-all duration-1000 ease-out delay-300 ${
           hovered
             ? "scale-x-110 w-[91%]"
-            : "lg:max-w-[71.5rem] md:max-w-[37.5rem] max-w-[28.125rem] lg:rounded-[2.5rem] md:rounded-3xl rounded-2xl"
+            : "lg:max-w-[71.5rem] md:max-w-[37.5rem] max-w-[23.875rem] lg:rounded-[2.5rem] md:rounded-3xl rounded-2xl"
         } absolute z-50`}
       >
         <div className="text-center text-white">
@@ -106,12 +106,12 @@ const ChooseFallo = () => {
       <div
         className={`${
           hovered ? "scale-x-105 w-[90%]" : ""
-        }  lg:h-[75rem] md:h-[61rem] h-[47rem] bg-[#1789fc] lg:rounded-[2.5rem] md:rounded-3xl rounded-2xl absolute z-40 lg:w-[68.35rem] md:w-[34.35rem] w-[25.975rem]`}
+        }  lg:h-[75rem] md:h-[61rem] h-[50rem] bg-[#1789fc] lg:rounded-[2.5rem] md:rounded-3xl rounded-2xl absolute z-40 lg:w-[68.35rem] md:w-[34.35rem] w-[21.6875rem]`}
       ></div>
       <div
         className={`${
           hovered ? "scale-x-105" : ""
-        } lg:h-[78.25rem] md:h-[64.125rem] h-[49rem] bg-[#b7dafe] lg:rounded-[2.5rem] md:rounded-3xl rounded-2xl absolute z-30 lg:w-[64.35rem] md:w-[30.35rem] w-[22.975rem]`}
+        } lg:h-[78.25rem] md:h-[64.125rem] h-[52rem] bg-[#b7dafe] lg:rounded-[2.5rem] md:rounded-3xl rounded-2xl absolute z-30 lg:w-[64.35rem] md:w-[30.35rem] w-[18.6875rem]`}
       ></div>
       <div></div>
     </div>
