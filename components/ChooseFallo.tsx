@@ -7,8 +7,8 @@ const ChooseFallo = () => {
   return (
     <div
       className="flex flex-col justify-center items-center relative lg:h-[109.4375rem] md:h-[71.875rem] h-[62.5rem] w-full px-6"
-      // onMouseEnter={() => setHovered(true)}
-      // onMouseLeave={() => setHovered(false)}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
       <div
         className={`bg-[#0a3a6a] pt-[3.6875rem] pb-12 transition-all duration-1000 ease-out delay-300 ${
