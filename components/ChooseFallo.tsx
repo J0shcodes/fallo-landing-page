@@ -106,7 +106,7 @@ const ChooseFallo = () => {
       <div
         className={`${
           hovered ? "scale-x-105 w-[90%]" : ""
-        }  lg:h-[75rem] md:h-[61rem] h-[50rem] bg-[#1789fc] lg:rounded-[2.5rem] md:rounded-3xl rounded-2xl absolute z-40 lg:w-[68.35rem] md:w-[34.35rem] w-[21.6875rem]`}
+        }  lg:h-[73rem] md:h-[61rem] h-[50rem] bg-[#1789fc] lg:rounded-[2.5rem] md:rounded-3xl rounded-2xl absolute z-40 lg:w-[68.35rem] md:w-[34.35rem] w-[21.6875rem]`}
       ></div>
       <div
         className={`${
