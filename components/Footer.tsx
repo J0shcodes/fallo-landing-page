@@ -5,10 +5,10 @@ import FooterLine from "@/public/icons/FooterLine";
 
 const Footer = () => {
   return (
-    <div className="lg:flex lg:justify-between lg:flex-row-reverse pr-[10.3125rem] lg:pt-[3.5rem] lg:pb-[5.1875rem] lg:px-[7rem] p-[2.375rem] bg-red-500 w-full">
+    <div className="flex lg:justify-between lg:flex-row-reverse lg:pr-[10.3125rem] lg:pt-[3.5rem] lg:pb-[5.1875rem] lg:px-[7rem] p-[2.375rem] bg-red-500 w-full flex-col justify-center items-center">
     {/* // <div className="pr-[10.3125rem] lg:pt-[3.5rem] lg:pb-[5.1875rem] lg:px-[7rem] p-[2.375rem] bg-red-500"> */}
-      <div className="flex justify-between lg:w-[33.1875rem] lg:mb-0 mb-6 md:min-w-[26.5rem] sm:min-w-[22rem] bg-green-500">
-        <div className="lg:text-lg text-xs">
+      <div className="flex justify-between lg:w-[50%] md:w-[650px] w-full lg:mb-0 mb-6 bg-green-500">
+        <div className="lg:text-lg md:text-base text-xs">
           <div className="font-semibold">Quick Links</div>
           <ul className="list-disc mt-4">
             <li className="mb-4">
@@ -32,7 +32,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="lg:text-lg text-xs">
+        <div className="lg:text-lg md:text-base text-xs">
           <div className="font-semibold">Social Media</div>
           <ul className="list-disc mt-4">
             <li className="mb-4">
@@ -50,7 +50,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="lg:text-lg text-xs">
+        <div className="lg:text-lg md:text-base text-xs">
           <div className="font-semibold">Legal</div>
           <ul className="list-disc mt-4">
             <li className="mb-4">
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-orange-500 w-fit">
+      <div className="bg-orange-500 md:w-[650px] w-full lg:w-[40%]">
         <div className="mb-[1.155625rem]">
           <Image
             src="/images/Fallo-logo.png"
@@ -77,7 +77,14 @@ const Footer = () => {
           />
           <div className="mt-6 lg:text-2xl lg:text-start text-center">The all in one productivity powerhouse</div>
         </div>
-        <FooterLine />
+        {/* <FooterLine /> */}
+        <Image
+            src="/images/line.png"
+            alt="Logo"
+            width={413}
+            height={278}
+            layout="responsive"
+          />
         <p className="mt-4 lg:text-2xl lg:text-start text-center">© 2024 Fallo. All rights reserved.</p>
       </div>
     </div>
