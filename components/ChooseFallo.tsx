@@ -6,7 +6,7 @@ const ChooseFallo = () => {
   const [hovered, setHovered] = useState(false);
   return (
     <div
-      className="flex flex-col justify-center items-center relative lg:h-[109.4375rem] md:h-[71.875rem] h-[62.5rem] w-full px-6"
+      className="flex flex-col justify-center items-center relative lg:h-[109.4375rem] md:h-[71.875rem] h-[62.5rem] w-full px-6 z-40"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
