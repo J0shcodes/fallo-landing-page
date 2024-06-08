@@ -5,9 +5,9 @@ import FooterLine from "@/public/icons/FooterLine";
 
 const Footer = () => {
   return (
-    <div className="flex lg:justify-between lg:flex-row-reverse lg:pr-[10.3125rem] lg:pt-[3.5rem] lg:pb-[5.1875rem] lg:px-[7rem] p-[2.375rem] bg-red-500 w-full flex-col justify-center items-center">
+    <div className="flex lg:justify-between lg:flex-row-reverse lg:pr-[10.3125rem] lg:pt-[3.5rem] lg:pb-[5.1875rem] lg:px-[7rem] p-[2.375rem] w-full flex-col justify-center items-center">
     {/* // <div className="pr-[10.3125rem] lg:pt-[3.5rem] lg:pb-[5.1875rem] lg:px-[7rem] p-[2.375rem] bg-red-500"> */}
-      <div className="flex justify-between lg:w-[50%] md:w-[650px] w-full lg:mb-0 mb-6 bg-green-500">
+      <div className="flex justify-between lg:w-[50%] md:w-[650px] w-full lg:mb-0 mb-6">
         <div className="lg:text-lg md:text-base text-xs">
           <div className="font-semibold">Quick Links</div>
           <ul className="list-disc mt-4">
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-orange-500 md:w-[650px] w-full lg:w-[40%]">
+      <div className="md:w-[650px] w-full lg:w-[40%]">
         <div className="mb-[1.155625rem]">
           <Image
             src="/images/Fallo-logo.png"
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
         {/* <FooterLine /> */}
         <Image
-            src="/images/line.png"
+            src="/images/Line.png"
             alt="Logo"
             width={413}
             height={278}

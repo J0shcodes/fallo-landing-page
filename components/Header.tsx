@@ -10,16 +10,19 @@ import HeaderModal from "./HeaderModal";
 
 const Header = () => {
   const [showSupportDropdown, setShowSupportDropdown] = useState(false);
+  const [showHeaderModal, setShowHeaderModal] = useState(false);
 
   const toggleSupportDropdown = () => {
-    setShowSupportDropdown(!showSupportDropdown)
-  }
+    setShowSupportDropdown(!showSupportDropdown);
+  };
+
+  console.log(showHeaderModal)
 
   return (
-    <div className="text-white bg-[#fafafa] flex justify-between lg:rounded-tl-3xl lg:rounded-br-3xl rounded-tl-lg rounded-br-lg w-full px-[1.375rem] py-[1.125rem] mb-[7.5625rem]">
+    <div className="relative text-white bg-[#fafafa] flex justify-between lg:rounded-tl-3xl lg:rounded-br-3xl rounded-tl-lg rounded-br-lg w-full px-[1.375rem] py-[1.125rem] mb-[7.5625rem]">
       <Image src="/images/logo.svg" alt="small logo" width={100} height={25} />
-      <div className="lg:flex md:flex flex-col justify-center items-center w-[19.625rem] relative hidden">
-        <ul className="text-lg text-[#0b0b0b] flex justify-between w-full">
+      <div className="lg:flex md:flex flex-col justify-center items-center lg:w-[19.625rem] md:w-[17.5rem] relative hidden">
+        <ul className="lg:text-lg text-[#0b0b0b] flex justify-between w-full">
           <li>
             <Link href="/about" className="hover:text-primary">
               About
@@ -42,21 +45,26 @@ const Header = () => {
         </ul>
         <SupportDropdown showSupportDropdown={showSupportDropdown} />
       </div>
-      <div className="w-[22.3125rem] lg:block md:block hidden">
+      <div className="lg:w-[22.3125rem] lg:block md:block hidden">
         <Link
           href="/"
-          className="text-lg text-[#06070d] font-medium hover:bg-[#9f9fa1] py-4 px-9 mr-1.5 rounded-tl-lg rounded-br-lg"
+          className="lg:text-lg text-[#06070d] font-medium hover:bg-[#9f9fa1] py-4 px-9 mr-1.5 rounded-tl-lg rounded-br-lg"
         >
           Sign In
         </Link>
-        <button className="bg-primary py-4 rounded-tl-lg rounded-br-lg hover:bg-[#0a3a6a] lg:text-lg text-base text-[#fafafa] font-medium w-[13.0625rem] ml-1.5">
+        <button className="bg-primary py-4 rounded-tl-lg rounded-br-lg hover:bg-[#0a3a6a] lg:text-lg text-base text-[#fafafa] font-medium lg:w-[13.0625rem] md:w-[9rem] ml-1.5">
           Create an account
         </button>
       </div>
-      <label className="flex flex-col gap-2 before:w-[60px] before:content-[''] after:w-[60px] after:content-[''] bg-[#0b0b0b] rounded-full">
-        <input className="before:content-[''] before:w-[60px] after:content-[''] after:w-[60px] bg-[#0b0b0b]" type="checkbox"/>
-      </label>
-      {/* <HeaderModal/> */}
+      <div
+        className="lg:hidden md:hidden cursor-pointer"
+        onClick={() => setShowHeaderModal(!showHeaderModal)}
+      >
+        <span className={`w-[1.5625rem] h-[0.1875rem] bg-[#0b0b0b] my-[0.3125rem] mx-auto block transition-all duration-300 ease-in-out ${showHeaderModal ? "translate-y-2 rotate-45" : ""}`}></span>
+        <span className={`w-[1.5625rem] h-[0.1875rem] bg-[#0b0b0b] my-[0.3125rem] mx-auto block transition-all duration-300 ease-in-out ${showHeaderModal ? "opacity-0" : ""}`}></span>
+        <span className={`w-[1.5625rem] h-[0.1875rem] bg-[#0b0b0b] my-[0.3125rem] mx-auto block transition-all duration-300 ease-in-out ${showHeaderModal ? "-translate-y-2 -rotate-45" : ""}`}></span>
+      </div>
+      {showHeaderModal ? <HeaderModal showHeaderModal={showHeaderModal} setShowHeaderModal={setShowHeaderModal} /> : null}
     </div>
   );
 };

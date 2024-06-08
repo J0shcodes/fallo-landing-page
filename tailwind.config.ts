@@ -54,13 +54,25 @@ const config: Config = {
           "100%": {
             opacity: '0'
           }
+        },
+        reveal: {
+          "0%": {
+            top: '-100%'
+          },
+          "50%": {
+            top: '3.2rem'
+          },
+          "100%": {
+            top: '6.4rem'
+          }
         }
       },
       animation: {
         ring1: 'ring 3s steps(3, end) infinite',
         switch1: 'switch1 5s ease-in-out infinite',
         switch2: 'switch2 5s ease-in-out infinite',
-        switch3: 'switch3 5s ease-in-out infinite'
+        switch3: 'switch3 5s ease-in-out infinite',
+        reveal: 'reveal 0.3s ease-in-out'
       },
       transitionProperty: {
         'width': 'width',
