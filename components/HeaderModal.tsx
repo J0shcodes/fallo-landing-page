@@ -23,7 +23,7 @@ const HeaderModal: FC<HeaderModalProps> = ({
 
   return (
     <div
-      className={`bg-white py-[1.875rem] fixed left-0 lg:hidden md:hidden w-full top-[6.4rem] animate-reveal`}
+      className={`bg-white py-[1.875rem] fixed left-0 lg:hidden md:hidden w-full top-[6.35rem] animate-reveal z-50 shadow-md`}
     >
       <div className="flex flex-col justify-center items-center w-full relative">
         <ul className="text-lg text-[#0b0b0b]">
