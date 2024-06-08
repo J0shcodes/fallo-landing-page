@@ -4,6 +4,7 @@ import { FC } from "react";
 import QuestionCircle from "@/public/icons/QuestionCircle";
 import GlobeIcon from "@/public/icons/GlobeIcon";
 import OpenBookIcon from "@/public/icons/OpenBookIcon";
+import { HeaderModalProps } from "./HeaderModal";
 
 interface SupportProps {
   showSupportDropdown: boolean;
