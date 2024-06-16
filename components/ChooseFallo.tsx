@@ -30,7 +30,7 @@ const ChooseFallo = () => {
           )}
         </div>
         <div
-          className={`bg-[#b7dafe] max-w-[69.25rem] ${
+          className={`bg-[#b7dafe]  ${
             hovered
               ? "lg:rounded-2xl md:rounded-xl rounded-md"
               : "lg:rounded-tr-2xl lg:rounded-br-2xl md:rounded-tr-xl md:rounded-br-xl rounded-tr-md rounded-br-md"
@@ -82,7 +82,7 @@ const ChooseFallo = () => {
         </div>
         {/* </div> */}
         <div
-          className={`bg-[#64b0fd] max-w-[69.25rem] ${
+          className={`bg-[#64b0fd] ${
             hovered
               ? "lg:rounded-2xl md:rounded-xl rounded-md"
               : "lg:rounded-tr-2xl lg:rounded-br-2xl md:rounded-tr-xl md:rounded-br-xl rounded-tr-md rounded-br-md"
