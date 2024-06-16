@@ -19,7 +19,7 @@ const Header = () => {
   console.log(showHeaderModal)
 
   return (
-    <div className="lg:relative md:relative fixed text-white bg-[#fafafa] flex justify-between lg:rounded-tl-3xl lg:rounded-br-3xl rounded-tl-lg rounded-br-lg lg:w-full md:w-full w-[91.5%] px-[1.375rem] py-[1.125rem] mb-[7.5625rem] z-50 shadow-md">
+    <div className="lg:relative md:relative fixed text-white bg-[#fafafa] flex justify-between lg:rounded-tl-3xl lg:rounded-br-3xl rounded-tl-lg rounded-br-lg lg:w-full md:w-full w-[87%] px-[1.375rem] py-[1.125rem] mb-[7.5625rem] z-50 shadow-md">
       <Image src="/images/logo.svg" alt="small logo" width={100} height={25} />
       <div className="lg:flex md:flex flex-col justify-center items-center lg:w-[19.625rem] md:w-[17.5rem] relative hidden">
         <ul className="lg:text-lg text-[#0b0b0b] flex justify-between w-full">
